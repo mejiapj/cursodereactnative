@@ -3,21 +3,22 @@ import React from 'react';
 
 // import { StatusBar } from 'expo-status-bar';
 
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
-import Saludar from './src/components/Saludar';
+import NavigationStack from './src/navigation/NavigationStack';
 
 export default function App() {
   return (
     <NavigationContainer>
-      <View style={styles.container}>
+      {/*       <View style={styles.container}>
         <Text>Curso React Native</Text>
-        {/*       <Saludar firstname="Agustin" lastname="Navarro" /> */}
+        <Saludar firstname="Agustin" lastname="Navarro" />
         <Saludar firstname="Agustin" lastname="Navarro Galdon" />
-        {/*<Saludar name="Carlos Navarro"/>*/}
-        {/*<Saludar name="Andres Navarro"/>*/}
-      </View>
+        <Saludar name="Carlos Navarro" />
+        <Saludar name="Andres Navarro" />
+      </View> */}
+      <NavigationStack />
     </NavigationContainer>
   );
 }
